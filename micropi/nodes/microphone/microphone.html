@@ -8,6 +8,7 @@
             bitwidth: {value:"16"},
             encoding: {value:"signed-integer"},
             channels: {value:"1"},
+            device: {value:"plughw:1,0"},
             rate: {value: "22050"},
             silence: {value: 10},
             debug: {value: false},
@@ -72,6 +73,10 @@
         <label for="node-input-name"><i class="icon-tag"></i> channels</label>
         <input type="text" id="node-input-channels" placeholder="1">
     </div>
+    <div class="form-row">
+		<label for="node-input-device"><i class="icon-tag"></i> device</label>
+		<input type="text" id="node-input-device" placeholder="plughw:1,0">
+	</div>    
     <div class="form-row">
         <label for="node-input-rate"><i class="icon-tag"></i> rate</label>
         <input type="text" id="node-input-rate" placeholder="22050">
